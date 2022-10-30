@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class uber {
+            constructor(distance,customerWaitTime) {
+                this.distance = distance;
+                
+                this.customerWaitTime = customerWaitTime;}
+
+                priceDetails()
+                {
+                    let rate = null;
+                    if (this.distance > 0 && this.distance < 10) {
+                        this.rate = 8
+                    }
+                    else {
+                        this.rate = 5
+                    }
+                    console.log(`The price for your this ride is ${(this.distance * this.rate) - 2 * this.customerWaitTime}`)
+                }
+            
+
+        }
+        let person = new uber(25,5)
+
+        person.priceDetails()
+
+    </script>
+</body>
+
+</html>

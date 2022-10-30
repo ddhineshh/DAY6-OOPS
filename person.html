@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class person {
+            constructor(name, age, gender, education, placeOfBirth, height, weight) {
+                this.name = name;
+                this.age = age;
+                this.gender = gender;
+                this.education = education;
+                this.placeOfBirth = placeOfBirth;
+                this.height = height;
+                this.weight = weight;
+            }
+            personDetails() {
+                console.log(`A person named ${this.name},${this.gender} with age of ${this.age} born in ${this.placeOfBirth} having education in ${this.education}.
+             ${this.name} has weight of ${this.weight} and height of ${this.height}`)
+            }
+
+        }
+        let person1 = new person("viki", "20", "male", "computerscience", "chennai", "172cms", "58");
+        let person2 = new person("mathi","26","male","electrical","karur","180cms","90")
+
+        person2.personDetails()
+    </script>
+</body>
+
+</html>
